@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { setRem } from "../../styles";
+import { setRem } from "./styles";
 
 const Section = styled.section`
   padding: ${setRem(64)} 0;

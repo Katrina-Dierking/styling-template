@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Title from "../globals/Title";
 import Section from "../globals/Section";
 import cards from "./cards-data";
-import { setColor, media, setRem } from "../../styles";
+import { setColor, media, setRem } from "../globals/styles";
 
 export default class Cards extends Component {
   state = {

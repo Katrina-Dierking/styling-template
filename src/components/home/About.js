@@ -9,7 +9,7 @@ import {
   setColor,
   setLetterSpacing,
   media
-} from "../globals/styles";
+} from "../../styles";
 import { PrimaryBtn } from "../globals/Buttons";
 import styled from "styled-components";
 const About = () => {

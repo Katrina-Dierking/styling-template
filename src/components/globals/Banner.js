@@ -1,6 +1,12 @@
 import React from "react";
 import styled, { css, keyframes } from "styled-components";
-import { setColor, setRem, setLetterSpacing, setBorder, media } from "./styles";
+import {
+  setColor,
+  setRem,
+  setLetterSpacing,
+  setBorder,
+  media
+} from "../../styles";
 const fadeIn = (start, point, end) => {
   const animation = keyframes`
 0%{

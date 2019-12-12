@@ -8,7 +8,7 @@ import {
   setColor,
   setShadow,
   setBorder
-} from "../globals/styles";
+} from "../../styles";
 import PropTypes from "prop-types";
 const Card = ({ className, card }) => {
   const { img = "", title = "", info = "", otherInfo = "" } = card;

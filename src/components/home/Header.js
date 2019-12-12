@@ -1,18 +1,17 @@
 import React from "react";
 import Hero from "../globals/Hero";
-import optimist from "../../images/theoptimistdreamer-nappy-.jpeg";
-import homeImg from "../../images/homeBcg.jpeg";
+import orange from "../../images/orange.jpeg";
 import Banner from "../globals/Banner";
 import { PrimaryBtn } from "../globals/Buttons";
 const Header = () => {
   return (
-    <Hero img={homeImg}>
+    <Hero img={orange}>
       <Banner
-        greeting="welcome to"
-        title="beachwalk resort"
-        text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi provident eos sapiente deleniti in quisquam."
+        greeting="Header part 1"
+        title="Header part 2"
+        text="Text about my header, if I had some"
       >
-        <PrimaryBtn t="1rem">view details</PrimaryBtn>
+        <PrimaryBtn t="1rem">Button</PrimaryBtn>
         {/* <PrimaryBtn as="a" href="https://www.google.com">
           view details
         </PrimaryBtn> */}

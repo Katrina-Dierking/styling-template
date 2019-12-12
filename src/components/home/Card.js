@@ -10,24 +10,24 @@ import {
   setBorder
 } from "../../styles";
 import PropTypes from "prop-types";
-const Room = ({ className, room }) => {
-  const { img = "", title = "", info = "", price = 0 } = room;
+const Card = ({ className, card }) => {
+  const { img = "", title = "", info = "", otherInfo = "" } = card;
   return (
     <article className={className}>
       <div className="img-container">
-        <img src={img} alt="single room" />
-        <div className="price">${price}</div>
+        <img src={img} alt="single card" />
       </div>
-      <div className="room-info">
+      <div className="card-info">
         <h4>{title}</h4>
         <p>{info}</p>
+        <p>{otherInfo}</p>
         <SmallBtn>Hello</SmallBtn>
       </div>
     </article>
   );
 };
 
-export default styled(Room)`
+export default styled(Card)`
   background: ${setColor.mainWhite};
   margin: ${setRem(32)} 0;
   .img-container {
@@ -41,7 +41,7 @@ export default styled(Room)`
     &:hover img {
       opacity: 0.5;
     }
-    .price {
+    .other-info {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -54,11 +54,11 @@ export default styled(Room)`
       opacity: 0;
       ${setTransition()};
     }
-    &:hover .price {
+    &:hover .other-info {
       opacity: 1;
     }
   }
-  .room-info {
+  .card-info {
     padding: ${setRem()};
     h4 {
       text-transform: capitalize;
@@ -75,11 +75,11 @@ export default styled(Room)`
   }
 `;
 
-Room.propTypes = {
-  room: PropTypes.shape({
+Card.propTypes = {
+  card: PropTypes.shape({
     img: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     info: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired
+    otherInfo: PropTypes.string.isRequired
   })
 };

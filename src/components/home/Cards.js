@@ -1,29 +1,30 @@
 import React, { Component } from "react";
-import Room from "./Room";
+import Card from "./Card";
 import styled from "styled-components";
 import Title from "../globals/Title";
 import Section from "../globals/Section";
-import rooms from "./rooms-data";
+import cards from "./cards-data";
 import { setColor, media, setRem } from "../../styles";
-export default class Rooms extends Component {
+
+export default class Cards extends Component {
   state = {
-    rooms: rooms
+    cards: cards
   };
   render() {
     return (
       <Section color={setColor.lightGrey}>
-        <Title title="our rooms" center />
-        <RoomsCenter>
-          {this.state.rooms.map(room => {
-            return <Room key={room.id} room={room} />;
+        <Title title="our cards" center />
+        <CardsCenter>
+          {this.state.cards.map(card => {
+            return <Card key={card.id} card={card} />;
           })}
-        </RoomsCenter>
+        </CardsCenter>
       </Section>
     );
   }
 }
 
-const RoomsCenter = styled.div`
+const CardsCenter = styled.div`
   width: 90vw;
   margin: 0 auto;
   ${media.tablet`

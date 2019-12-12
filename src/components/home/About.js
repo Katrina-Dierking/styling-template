@@ -1,7 +1,8 @@
 import React from "react";
 import Section from "../globals/Section";
 import Title from "../globals/Title";
-import aboutImg from "../../images/aboutBcg.jpeg";
+import lookUp from "../../images/look-up.jpeg";
+
 import {
   setRem,
   setBorder,
@@ -16,17 +17,12 @@ const About = () => {
     <Section>
       <AboutCenter>
         <div className="about-img">
-          <img src={aboutImg} alt="about us" />
+          <img src={lookUp} alt="woman looking up" />
         </div>
         <div className="about-info">
-          <Title title="about us" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit aut
-            quos ea optio ipsa, molestiae officiis, voluptates itaque blanditiis
-            nostrum est fugiat, architecto odit at atque obcaecati nihil!
-            Cupiditate, error.
-          </p>
-          <PrimaryBtn>read more</PrimaryBtn>
+          <Title title="Section Title" />
+          <p>This is where all my info about this section would live</p>
+          <PrimaryBtn>Button</PrimaryBtn>
         </div>
       </AboutCenter>
     </Section>

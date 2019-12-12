@@ -6,7 +6,7 @@ import {
   setFont,
   setBorder,
   setTransition
-} from "../../styles";
+} from "./styles";
 export const PrimaryBtn = styled.button`
   display: inline-block;
   background: ${setColor.primaryColor};
